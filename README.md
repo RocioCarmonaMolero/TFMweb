@@ -21,3 +21,5 @@ y puedo poner tambien enlaces a paginas [molonas](https://jdieramon.github.io/)
 
 
 ![](figura1.png)
+
+Instrucciones pa crear la pagina web: https://pages.github.com/
