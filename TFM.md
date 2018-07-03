@@ -21,3 +21,14 @@ The same process was repeated twice, being *Medicago truncatula* and *Glycine ma
 The final 'candidate' vector contains 43 proteins.
 
 Considering that the search was carried out against the model plant *Arabidopsis thaliana*, and against two legumes: *Glycine max* and *Medicago truncatula*, which is a model in turn of this family; we can conclude to have covered an adequate spectrum of species that, by sequence homology, will allow us to identify all the aldehyde dehydrogenases of *Cicer arietinum*.
+
+
+### Checking the conserved domains ALDH
+
+To verify which of our candidate proteins are aldolases, the presence of the ALDH-superfamily conserved domains was checked: 'PF00171.21', 'PF07368.10' and 'PF05893.13' in Pfam; 'PS00687' and 'PS00070' in ScanProsite; the accession 'cl11961' in the database of Conserved Domains of the NCBI; and the accession '53720' in the Superfamily database.
+After this screen 36 proteins are selected, which will constitute a new vector called 'aldhcicer'.
+
+### Blastp of 'aldhcicer' against the genome of *C.arietinum*
+
+Once the aldehyde dehydrogenases of chickpea are identified, a blastp is performed against its own genome. In this way, it will be possible to include any protein that does not have high homology with the other species, since in this case the query proteins are from the same organism.
+One more protein was identified with the Pfam domain 'PF00171.21'. Thus, we conclude that the chickpea ALDH superfamily has 37 members.
