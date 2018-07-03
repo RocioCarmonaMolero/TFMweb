@@ -32,3 +32,19 @@ After this screen 36 proteins are selected, which will constitute a new vector c
 
 Once the aldehyde dehydrogenases of chickpea are identified, a blastp is performed against its own genome. In this way, it will be possible to include any protein that does not have high homology with the other species, since in this case the query proteins are from the same organism.
 One more protein was identified with the Pfam domain 'PF00171.21'. Thus, we conclude that the chickpea ALDH superfamily has 37 members.
+
+
+### Characterization of aldehyde dehydrogenases of C. arietinum
+ 
+For the characterization of the aldolases, attention was focused on obtaining the following properties:
+* Number of amino acids (naa)
+* Accession of your mRNA (accRNA)
+* Length in bp of its RNA (RNAlen)
+* Name of the gene locus (gename)
+* Chromosome in which it is (chr)
+* Number of exons (exon)
+* Position of the start of the protein (startp)
+* Position of the end of the protein (stop)
+* Molecular weight of the protein (mol_wg)
+ 
+In order to collect this information, the function [caracterization()](https://github.com/RocioCarmonaMolero/ScriptProteinas/blob/master/InformationProteins.R) is applied.
