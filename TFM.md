@@ -1,4 +1,4 @@
-## Identification of the *Cicer arietinum* aldehyde dehydrogenase
+## Identification of the *Cicer arietinum* aldehyde dehydrogenase superfamily
 
 ### Search for candidate proteins
 
