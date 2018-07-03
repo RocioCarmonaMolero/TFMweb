@@ -40,7 +40,7 @@ For the characterization of the aldolases, attention was focused on obtaining th
 * Number of amino acids (naa)
 * Accession of your mRNA (accRNA)
 * Length in bp of its RNA (RNAlen)
-* Name of the gene locus (gename)
+* Name of the gene locus (LOC)
 * Chromosome in which it is (chr)
 * Number of exons (exon)
 * Position of the start of the protein (startp)
