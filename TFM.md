@@ -46,5 +46,5 @@ For the characterization of the aldolases, attention was focused on obtaining th
 * Position of the start of the protein (startp)
 * Position of the end of the protein (stop)
 * Molecular weight of the protein (mol_wg)
- 
+
 In order to collect this information, the function [caracterization()](https://github.com/RocioCarmonaMolero/ScriptProteinas/blob/master/InformationProteins.R) is applied.
