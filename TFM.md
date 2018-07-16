@@ -67,7 +67,7 @@ Blast of all 37 chickpea aldolases was made against the Protein Refseq database 
 
 >   if(families[i,]$identity < 39.5 || families[i,]$lenquery < families[i,]$lenhit){
 
->     eliminate <- c(eliminate, i)
+>      eliminate <- c(eliminate, i)
 
 >   }
 
