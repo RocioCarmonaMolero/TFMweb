@@ -59,18 +59,4 @@ For the active center, the protein sequences were analyzed with [PROSITE](https:
 ### Classification of *C. arietinum* aldehyde dehydrogenases
 
 For the classification, the criteria stablished by the ALDH Gene Nomenclature Committee (AGNC) in 1999 was applied. Two proteins belong to the same gene family if they have more than 40% identity; to the same subfamily if they have more than 60% identity. In the annotation, the root 'ALDH' is followed by a family descriptor number, a capital letter to describe the subfamily, a number specifying the individual gene within the subfamily and a lowercase letter if necessary to designate variants (Zhu et al., 2014).
-Blast of all 37 chickpea aldolases was made against the Protein Refseq database of *Medicago truncatula* and *Glycine max*, both being legumes and *Medicago* the model plant of them. All the results were downloaded and filtered to eliminate those whose identity was <40% and whose query length was less than the hit length:
-
-> eliminate <-  c()
-
-> for(i in 1:nrow(families)){
-
->   if(families[i,]$identity < 39.5 || families[i,]$lenquery < families[i,]$lenhit){
-
->      eliminate <- c(eliminate, i)
-
->   }
-
-> }
-
-> data_fam <- families[-eliminate, ]
+Blast of all 37 chickpea aldolases was made against the Protein Refseq database of *Medicago truncatula* and *Glycine max*, both being legumes and *Medicago* the model plant of them. All the results were downloaded and filtered to eliminate those whose identity was <40% and whose query length was less than the hit length: [Blast_Sieve.R](https://raw.githubusercontent.com/RocioCarmonaMolero/ScriptProteinas/master/Blast_Sieve.R)
