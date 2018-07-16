@@ -62,9 +62,15 @@ For the classification, the criteria stablished by the ALDH Gene Nomenclature Co
 Blast of all 37 chickpea aldolases was made against the Protein Refseq database of *Medicago truncatula* and *Glycine max*, both being legumes and *Medicago* the model plant of them. All the results were downloaded and filtered to eliminate those whose identity was <40% and whose query length was less than the hit length:
 
 > eliminate <-  c()
+
 > for(i in 1:nrow(families)){
+
 >   if(families[i,]$identity < 39.5 || families[i,]$lenquery < families[i,]$lenhit){
+
 >     eliminate <- c(eliminate, i)
+
 >   }
+
 > }
+
 > data_fam <- families[-eliminate, ]
