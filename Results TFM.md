@@ -37,3 +37,11 @@ All ALDH gene families identified in higher plants such as *Arabidopsis* are pre
 
 ![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/Todos%20chr.jpg)
 **Figure 3**. Genomic distribution of *CaALDH* genes on the chickpea chromosomes. Chromosome number and sizes (Mb) are indicated above and below each bar, respectively. Only chromosomes with *CaALDH* genes are represented.
+
+
+
+## Classification of *C. arietinum* aldehyde dehydrogenases 
+
+The final classification is found in Table 1. The classification system established by the AGNC follows the guidelines of the Human Gene Nomenclature (http://www.genenames.org/guidelines.html) that recommends its use for other species. All this information can be found in the Aldehyde Dehydrogenase Superfamily Database (http://www.aldh.org). Since all the information is referenced and governed by the animal kingdom, the classification of ALDH in plant species is subordinated to what was previously described. In turn, a protein will belong to the family and subfamily, it will even have the same gene number, of the ALDH already identified with the one that has more homology; to facilitate future comparative studies. As an example we have the case of the protein CaALDH6B2, which tests the non-sequential allocation of the gene number. Thus, the definition of the AGNC does not seem to coincide with the usual practices.
+
+It is concluded that of the 24 existing ALDH families, the CAALDH are included in 10 of the 14 ALDH families previously described in plant species (2, 3, 5, 6, 7, 10, 12, 18 and 22) (Table 3). To achieve a safe classification of less clarified families, such as 18, it was necessary to make alignments between them and look at the set of properties that correspond to their function and subcellular location (Table 1).
