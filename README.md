@@ -1,12 +1,12 @@
 # Master's Final Thesis: 'Identification and Characterization of the *Cicer arietinum* aldehyde dehydrogenase superfamily'
 
-## Identification of the *Cicer arietinum* aldehyde dehydrogenase superfamily
 
 In this work we will see the next points:
 
-* [Search for candidate proteins](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#search-for-candidate-proteins)
-* [Checking ALDH conserved domains](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#checking-aldh-conserved-domains)
-* [BLASTP of 'aldhcicer' against *C. arietinum* genome](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#blastp-of-aldhcicer-against-carietinum-genome)
+* [Identification of the *C. arietinum* aldehyde dehydrogenase suprefamily](https://github.com/RocioCarmonaMolero/TFMweb#identification-of-the-cicer-arietinum-aldehyde-dehydrogenase-superfamily)
+          * [Search for candidate proteins](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#search-for-candidate-proteins)
+          * [Checking ALDH conserved domains](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#checking-aldh-conserved-domains)
+          * [BLASTP of 'aldhcicer' against *C. arietinum* genome](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#blastp-of-aldhcicer-against-carietinum-genome)
 * [Characterization of aldehyde dehydrogenases of *C. arietinum*](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#characterization-of-aldehyde-dehydrogenases-of-c-arietinum)
 * [Classification of *C. arietinum* aldehyde dehydrogenases](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#classification-of-c-arietinum-aldehyde-dehydrogenases)
 * [Phylogeny](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#phylogeny)
@@ -14,6 +14,8 @@ In this work we will see the next points:
 * [Expression in silico](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#expression-in-silico)
 * [Code availability](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#code-availability)
 
+
+## Identification of the *Cicer arietinum* aldehyde dehydrogenase superfamily
 
 ### Search for candidate proteins
 
