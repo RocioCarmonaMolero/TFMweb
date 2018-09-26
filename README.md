@@ -3,16 +3,16 @@
 
 In this work we will see the next points:
 
-* [1. Identification of the *C. arietinum* aldehyde dehydrogenase suprefamily](https://github.com/RocioCarmonaMolero/TFMweb#identification-of-the-cicer-arietinum-aldehyde-dehydrogenase-superfamily)
-  * [1.1. Search for candidate proteins](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#search-for-candidate-proteins)
-  * [1.2. Checking ALDH conserved domains](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#checking-aldh-conserved-domains)
-  * [1.3. BLASTP of 'aldhcicer' against *C. arietinum* genome](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#blastp-of-aldhcicer-against-carietinum-genome)
-* [2. Characterization of aldehyde dehydrogenases of *C. arietinum*](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#characterization-of-aldehyde-dehydrogenases-of-c-arietinum)
-* [3. Classification of *C. arietinum* aldehyde dehydrogenases](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#classification-of-c-arietinum-aldehyde-dehydrogenases)
-* [4. Phylogeny](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#phylogeny)
-* [5. Duplication Analysis](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#duplication-Analisis)
-* [6. Expression in silico](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#expression-in-silico)
-* [7. Code availability](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#code-availability)
+* [Identification of the *C. arietinum* aldehyde dehydrogenase suprefamily](https://github.com/RocioCarmonaMolero/TFMweb#identification-of-the-cicer-arietinum-aldehyde-dehydrogenase-superfamily)
+  * [Search for candidate proteins](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#search-for-candidate-proteins)
+  * [Checking ALDH conserved domains](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#checking-aldh-conserved-domains)
+  * [BLASTP of 'aldhcicer' against *C. arietinum* genome](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#blastp-of-aldhcicer-against-carietinum-genome)
+* [Characterization of aldehyde dehydrogenases of *C. arietinum*](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#characterization-of-aldehyde-dehydrogenases-of-c-arietinum)
+* [Classification of *C. arietinum* aldehyde dehydrogenases](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#classification-of-c-arietinum-aldehyde-dehydrogenases)
+* [Phylogeny](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#phylogeny)
+* [Duplication Analysis](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#duplication-Analisis)
+* [Expression in silico](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#expression-in-silico)
+* [Code availability](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#code-availability)
 
 
 ## 1. Identification of the *Cicer arietinum* aldehyde dehydrogenase superfamily
