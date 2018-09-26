@@ -72,7 +72,7 @@ For the active center, the protein sequences were analyzed with [PROSITE](https:
 
 [PROPSEARCH](http://abcis.cbs.cnrs.fr/propsearch/) was used to determine the molecular function. Each protein was analyzed individually and the hits with highest probability were written down. For the verification of these, it was checked whether the functional residues were conserved between query and hit. First through a database Blast search and after through an alignment between them with [Clustal Omega](http://www.clustal.org/omega/) program.
 
-! [Scheme of the bioinformatic tools used for the characterization step](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/function%20scheme.jpg)
+! [Scheme of the bioinformatic tools used for the characterization step](https://github.com/RocioCarmonaMolero/TFMweb/#function-scheme.jpg)
 
 
 ## Classification of CaALDHs
