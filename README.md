@@ -1,4 +1,4 @@
-# Master's Final Thesis: 'Identification and Characterization of the *Cicer arietinum* aldehyde dehydrogenase superfamily'
+# 'Identification and Characterization of the *Cicer arietinum* aldehyde dehydrogenase superfamily'
 
 
 In this work we will see the next points:
