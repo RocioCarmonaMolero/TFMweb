@@ -2,7 +2,7 @@
 
 In this work we will see the next points:
 
-* [Search for candidate proteins](#Search-for-candidate-proteins)
+* [Search for candidate proteins](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#search-for-candidate-proteins)
 * [Checking ALDH conserved domains](#Checking-ALDH-conserved-domains)
 * [BLASTP of 'aldhcicer' against *C. arietinum* genome](#BLASTP-of-'aldhcicer'-against-*C.arietinum*-genome)
 * [Characterization of aldehyde dehydrogenases of *C.arietinum*](#Characterization-of-aldehyde-dehydrogenases-of-*C.arietinum*)
