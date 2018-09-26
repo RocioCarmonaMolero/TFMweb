@@ -1,8 +1,5 @@
 ## Identification of the *Cicer arietinum* aldehyde dehydrogenase superfamily
 
-Index:
-* [Search](#Search-for-candidate-proteins)
-* [Checking](#Checking-ALDH-conserved-domains)
 
 ### Search for candidate proteins
 
