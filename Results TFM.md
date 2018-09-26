@@ -46,6 +46,7 @@ The final classification is found in Table 1. The classification system establis
 
 In conclusion, of the 24 existing ALDH families, the CaALDH are included in 10 of the 14 ALDH families previously described in plant species (2, 3, 5, 6, 7, 10, 12, 18 and 22) (Table 3). To achieve a safe classification of less clarified families, such as 18, it was necessary to make alignments between them and look at the set of properties that correspond to their function and subcellular location (Table 1).
 
+
 ## Phylogeny
 
 In order to study the phylogenetic relationships between the chickpea and *Medicago* ALDH, we carry out a multiple alignment between their sequences. Both species are closely related; *C. arietinum* diverged from *M. truncatula* ~ 10-20 million years ago (Varshney et al., 2013). This phylogenetic analysis gives us a view of the changes occurred during the speciation.
@@ -58,3 +59,18 @@ The 100% identity of the *Cicer-Medicago* sister pair in the ALDH7 sequences fit
 The rest of sequences are included in a subdivided cluster. In the ALDH6 sequences subgroup we find the opposite case of the family 18: *Medicago* contains two MtALDH6B2, and *Cicer* one CaALDH6B2. The evolutionary pressure could cause the loss of one of them after speciation. We have the same case in the subgroups of the sequences ALDH11, ALDH10 (or BADH) and ALDH2B4, but in this last there are two isoforms in *Cicer*, an event that does not occur in *Medicago*.
 The ALDH3 sequences are contained in another subgroup. The *Cicer-Cicer* and *Medicago-Medicago* sister pairs in the 3H1 subfamily indicate that a series of duplications and deletions occurred after speciation.
 In the ALDH22 sequences cluster we found the uncharacterized aldehyde dehydrogenase protein of *Medicago* associated with the *Cicer-Medicago* sister pair; this protein could belong to the family 22.
+
+
+![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/phylogenetic%20tree%20MtALDH-%20CaALDH.png)
+**Figure 4**. Analysis of the phylogenetic relationships of ALDH in *C. arietinum* and *M. truncatula*. 29 CaALDH proteins and 28 MtALDH proteins. The percentage of replicated trees in which the proteins were associated in the same cluster in the bootstrap test (1000 replicates) is indicated next to the branches. The CaALDH are marked with a diamond, the colors indicate each family and subfamily.
+
+
+## Duplication analysis
+
+To corroborate the hypotheses of duplications indicated throughout the work, an analysis was performed with the Circoletto tool.
+The sequences of the proteins of the 3F1 subfamily indicate a high identity (Figure 5). In the phylogenetic tree, Figure 3, each one appears with its respective sister pair of *Medicago*. Considering both results, if there had been an event of duplication in these genes, this would have occurred before the speciation process.
+In phylogeny, the sequences of the proteins MtALDH3H1.11, CaALDH3H1c and CaALDH3H1d are grouped in the same cluster (Figure 3). In Figure 5 these two chickpea proteins show an identity > 99%. The results of both analysis coincide and support the hypothesis of the event of duplication after speciation.
+Short aa sequences are not analyzed with Circoletto, so this does not help to elucidate the problems of families 3 and 18 proteins.
+
+![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/duplication%20analysis_1genperlocus.png)
+**Figure 5**. Analysis of duplications between CaALDH with the Circoletto tool; 1 gene per locus. Colors: green identities ≤ 95%, orange ≤ 99% and red> 99%.
