@@ -1,4 +1,4 @@
-### Results of the work 'Identification and characterization of the *Cicer arietinum* aldehyde dehydrogenase superfamily'
+# Results of the work 'Identification and characterization of the *Cicer arietinum* aldehyde dehydrogenase superfamily'
 
 
 ## Identification and characterization of aldehyde dehydrogenases of C. arietinum
@@ -10,5 +10,7 @@ The completeness and availability of the chickpea genome together with database 
 We observed that families 5, 6, 11, 12 and 22 are defined by a single gene in chickpea, similar to Arabidopsis, O. sativa, S. italica, S. bicolor, E. parvulum and E. salsugineum (Table 3); suggesting that these families constitute ALDH 'house-keeping' genes, involved in the central metabolism of plants and the preservation of the levels of non-toxic aldehydes. Families 2, 3 and 18 are comparatively abundant in C. arietinum. Family 3 (10 genes) and family 18 (6 genes) have a higher number of members in chickpea than in the rest of the plant species described so far. ALDH3 proteins constitute one of the most widespread and diverse groups of ALDH genes in plant species (Brocker et al., 2013).
 There are no CaALDH genes in families 19, 21, 23 and 24. Families 21 and 23 have been found to contain only primitive terrestrial plant genes (Chen et al., 2002), and ALDH24 seems to be unique to single-celled alga C. reinhardtii (Wood & Duff, 2009); suggesting that these three families may have played an important role in the evolution of lower plants and subsequently were lost in higher plants. Family 19 has only been found in tomato (S. lycopersicum), so it could have evolved specifically in this lineage (Jimenez-Lopez et al., 2016).
 
-![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/Esquema_CaALDH.jpg)
-**Figure 2**. CaALDH identification scheme.
+![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/Esquema_CaALDH1.jpg)
+**Figure 2**. CaALDH identification scheme. Own functions appear in color. Proteins from *Arbidopsis, G. max* and *Medicago* were used as a query in BLASTP searches against the reference genome of the chickpea. The result of this was cleaned by using R scripts to avoid repetitions. The chickpea proteins that did not have the ALDH domains were eliminated and another BLASTP was run against the *Cicer* genome to ensure that we were including all the CAALDH and detecting the un predicted ones. This resulted in 37 aldehyde dehydrogenases encoded by the chickpea genome.
+
+
