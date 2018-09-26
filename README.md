@@ -4,9 +4,9 @@ In this work we will see the next points:
 
 * [Search for candidate proteins](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#search-for-candidate-proteins)
 * [Checking ALDH conserved domains](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#checking-aldh-conserved-domains)
-* [BLASTP of 'aldhcicer' against *C. arietinum* genome](#BLASTP-of-'aldhcicer'-against-*C.arietinum*-genome)
-* [Characterization of aldehyde dehydrogenases of *C.arietinum*](#Characterization-of-aldehyde-dehydrogenases-of-*C.arietinum*)
-* [Classification of *C.arietinum* aldehyde dehydrogenases](#Classification-of-*C.arietinum*-aldehyde-dehydrogenases)
+* [BLASTP of 'aldhcicer' against *C. arietinum* genome](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#blastp-of-aldhcicer-against-carietinum-genome)
+* [Characterization of aldehyde dehydrogenases of *C. arietinum*](#Characterization-of-aldehyde-dehydrogenases-of-*C.arietinum*)
+* [Classification of *C. arietinum* aldehyde dehydrogenases](#Classification-of-*C.arietinum*-aldehyde-dehydrogenases)
 * [Phylogeny](#Phylogeny)
 * [Duplication Analysis](#Duplication-Analisis)
 * [Expression in silico](#Expression-in-silico)
@@ -41,13 +41,13 @@ Considering that the search was carried out against the model plant *Arabidopsis
 To verify which of our candidate proteins are aldolases, the presence of the ALDH-superfamily conserved domains was checked: 'PF00171.21', 'PF07368.10' and 'PF05893.13' in Pfam; 'PS00687' and 'PS00070' in ScanProsite; the accession 'cl11961' in the database of Conserved Domains of the NCBI; and the accession '53720' in the Superfamily database.
 After this screen 36 proteins are selected, which will constitute a new vector called 'aldhcicer'.
 
-### Blastp of 'aldhcicer' against *C.arietinum* genome 
+### Blastp of 'aldhcicer' against *C. arietinum* genome 
 
 Once the aldehyde dehydrogenases of chickpea are identified, a blastp is performed against its own genome. In this way, it will be possible to include any protein that does not have high homology with the other species, since in this case the query proteins are from the same organism.
 One more protein was identified with the Pfam domain 'PF00171.21'. Thus, we conclude that the chickpea ALDH superfamily has 37 members.
 
 
-### Characterization of aldehyde dehydrogenases of *C.arietinum*
+### Characterization of aldehyde dehydrogenases of *C. arietinum*
  
 For the characterization of the aldolases, attention was focused on obtaining the following properties:
 * Number of amino acids (naa)
@@ -69,7 +69,7 @@ For the active center, the protein sequences were analyzed with [PROSITE](https:
 [PROPSEARCH](http://abcis.cbs.cnrs.fr/propsearch/) was used to determine the molecular function. Each protein was analyzed individually and the hits with highest probability were written down. For the verification of these, it was checked whether the functional residues were conserved between query and hit. First through a database Blast search and after through an alignment between them with [Clustal Omega](http://www.clustal.org/omega/) program.
 
 
-## Classification of *C.arietinum* aldehyde dehydrogenases
+## Classification of *C. arietinum* aldehyde dehydrogenases
 
 For the classification, the criteria stablished by the ALDH Gene Nomenclature Committee (AGNC) in 1999 was applied. Two proteins belong to the same gene family if they have more than 40% identity; to the same subfamily if they have more than 60% identity. In the annotation, the root 'ALDH' is followed by a family descriptor number, a capital letter to describe the subfamily, a number specifying the individual gene within the subfamily and a lowercase letter if necessary to designate variants (Zhu et al., 2014).
 Frequent methods for classifying this family in plants are based on homology with other plant species that are already described. For this, BLASTP of all 37 chickpea aldolases was made against the Protein Refseq database of *Medicago truncatula* and *Glycine max*, both being legumes and *Medicago* the model plant of them. All the results were downloaded and filtered to eliminate those whose identity was <40% and whose query length was less than the hit length: [Blast_Sieve.R](https://raw.githubusercontent.com/RocioCarmonaMolero/ScriptProteinas/master/Blast_Sieve.R)
