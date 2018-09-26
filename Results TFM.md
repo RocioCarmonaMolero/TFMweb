@@ -13,4 +13,5 @@ There are no *CaALDH* genes in families 19, 21, 23 and 24. Families 21 and 23 ha
 ![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/Esquema_CaALDH1.jpg)
 **Figure 2**. CaALDH identification scheme. Own functions appear in color. Proteins from *Arabidopsis, G. max* and *Medicago* were used as a query in BLASTP searches against of the chickpea reference genome. The result of this was cleaned with R scripts to avoid repetitions. Chickpea proteins without the ALDH domains were deleted and another BLASTP was run against the *Cicer* genome to ensure the inclusion of every CaALDH and the detection of the unpredicted ones. This resulted in 37 aldehyde dehydrogenases encoded by the chickpea genome.
 
-
+**Tabla 1**. Chickpea ALDH proteins classification.
+![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/tabla%201.pdf)
