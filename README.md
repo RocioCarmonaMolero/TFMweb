@@ -1,3 +1,5 @@
+# Master's Final Thesis: 'Identification and Characterization of the *Cicer arietinum* aldehyde dehydrogenase superfamily'
+
 ## Identification of the *Cicer arietinum* aldehyde dehydrogenase superfamily
 
 In this work we will see the next points:
@@ -47,7 +49,7 @@ Once the aldehyde dehydrogenases of chickpea are identified, a BLASTP is perform
 One more protein was identified with the Pfam domain 'PF00171.21'. Thus, we conclude that the chickpea ALDH superfamily has 37 members.
 
 
-### Characterization of aldehyde dehydrogenases of *C. arietinum*
+## Characterization of aldehyde dehydrogenases of *C. arietinum*
  
 For the characterization of the aldolases, attention was focused on obtaining the following properties:
 * Number of amino acids (naa)
