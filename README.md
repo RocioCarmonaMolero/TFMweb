@@ -102,3 +102,45 @@ The coding sequences of the CaALDH genes were used as a query against the chickp
 The codes of this TFM have been written in the R programming language, with the R software (Team R.C., 2017) and the free access RStudio interface (Team R, 2016, http://www.rstudio.com/). With these scripts we have collected data from the NCBI and performed the analysis of them. They are available in the repository: https://github.com/RocioCarmonaMolero/ScriptProteinas. The code is distributed under the MIT open source license.
 
 Every step is deeply explained in the [TFM](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TFM.md) file.
+
+
+
+# Results
+
+
+## Identification and characterization of aldehyde dehydrogenases of C. arietinum
+
+The identification process of the CaALDH is shown in Figure 1. Considering the species of the search, the model plant *Arabidopsis thaliana* and the legumes *Glycine max* and *Medicago truncatula*, we can conclude to have covered an adequate spectrum of species that, by homology of sequences, will allow us to identify all the aldehyde dehydrogenases of *Cicer arietinum*.
+
+The availability of the complete chickpea genome together with database searches allowed the identification of 37 chickpea ALDH proteins encoded by 29 *CaALDH* genes (Table 1). These genes encode proteins with a range of 134 (CaALDH3H1j) to 755 (CaALDH18B3d) aa of length. The number of exons of the *CaALDH* genes varies from 3 (CaALDH3H1j) to 21 (CaALDH18B3a, CaALDH18B3d and CaALDH18B3e). The corresponding molecular weights range between 15.07 and 81.90 kDa; and the predicted isoelectric points between 4.34 and 9.49 (Table 2). The wide range of pI suggests that chickpea ALDH proteins work in very different subcellular environments.
+
+We observed that families 5, 6, 11, 12 and 22 are defined by a single gene in chickpea, similar to *Arabidopsis, O. sativa, S. italica, S. bicolor, E. parvulum* and *E. salsugineum* (Table 3); suggesting that these families constitute ALDH house-keeping genes, involved in the plants central metabolism and the preservation of non-toxic aldehydes levels. Families 2, 3 and 18 are comparatively abundant in *C. arietinum*. Family 3 (10 genes) and family 18 (6 genes) have a higher number of members in chickpea than any plant species described so far. ALDH3 proteins constitute one of the most widespread and diverse groups of ALDH genes in plant species (Brocker et al., 2013).
+There are no *CaALDH* genes in families 19, 21, 23 and 24. Families 21 and 23 have been found to contain only primitive terrestrial plant genes (Chen et al., 2002), and ALDH24 appears only in the single-celled alga *C. reinhardtii* (Wood & Duff, 2009); suggesting that these three families may have played an important role in the evolution of lower plants and subsequently were lost in higher plants. Family 19 is found only in tomato (*S. lycopersicum*), so it evolved specifically in this lineage (Jimenez-Lopez et al., 2016).
+
+![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/Esquema_CaALDH1.jpg)
+**Figure 2**. CaALDH identification scheme. Own functions appear in color. Proteins from *Arabidopsis, G. max* and *Medicago* were used as a query in BLASTP searches against of the chickpea reference genome. The result of this was cleaned with R scripts to avoid repetitions. Chickpea proteins without the ALDH domains were deleted and another BLASTP was run against the *Cicer* genome to ensure the inclusion of every CaALDH and the detection of the unpredicted ones. This resulted in 37 aldehyde dehydrogenases encoded by the chickpea genome.
+
+**Tabla 1**. Chickpea ALDH proteins classification.
+![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TABLA1.jpg)
+
+
+*ALDH18* genes encode Δ1 -pyrroline-5-carboxylate synthetase (P5CS), defined as ALDH-like proteins (Sophos & Vasiliou, 2003). They are involved in proline biosynthesis (Igarashi et al., 1997), whose accumulation has adaptive roles in tolerance to biotic/abiotic stresses (Verbruggen & Hermans, 2008). Li et al. (2013) conclude that family 18 is the group that differs the most between species. The gene structure of the members of this family is different from that of the other families and presents additional domains AA-kinase; lacking the preserved ALDH active sites as shown by the results (Table 1). In addition, it is believed that the balance between proline biosynthesis and degradation is essential for its osmoprotective functions. Δ1 -pyrroline-5-carboxylate dehydrogenase (P5CDH) acts on the degradation, which is an ALDH12 protein. This degradation occurs in the mitochondria (Verbruggen & Hermans, 2008), which agrees with the results obtained in the prediction of subcellular localization (Table 1).
+
+**Table 2**. CaALDH Characterization.
+![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/Tabla%202.jpg)
+
+**Table 3**. Members of ALDH families identified in plants, humans and fungi.
+![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/All%20species%20ALDH%20families.jpg)
+
+
+
+Most genes in family 3 seem to be regulated by the abscisic acid (ABA) stress response pathway, they get expressed in response to abiotic stresses (Brocker et al., 2013, Kirch et al., 2004). Family 3 in plants have diverged to six subfamilies: 3E, 3F, 3H, 3I, 3J and 3K. Two of these subfamilies are found in chickpea (3F and 3H). The 3H1 subfamily is very expanded with 10 members encoded by 7 genes, while 3F1 has 3 members encoded by 3 genes. Missihoun et al. (2012) have postulated the abundance of ALDH3s proteins as result of a complex expression pattern of their genes regulated by gene-splicing or alternative promoters. Based on the differences in expression and response in *A. thaliana* (Kirch et al., 2004), it was suggested that the isoforms of ALDH3 have evolved as a consequence of functional specialization in specific tissues and subcellular organelles; which fits with the diversity of subcellular localization predicted for the chickpea proteins of this family (Table 1). The algae described so far, *C. reinhardtii* unicellular and *V. carteri*  colonial, lack family 3; suggesting that the expansion and diversification of this gene family occurred along with the evolutionary movement of aquatic plants (Brocker et al., 2013).
+
+ScanProsite analysis showed that the characteristic domains PS00687 and PF00070 were not found on the 37 ALDH sequences: 12 of the 37 contain both domains; 5 of them contain only domain PS00687 and 2 of them contain only PS00070. Some of the proteins that do not contain these domains are found in subfamilies 3F1, 3H1, and family 18. Therefore, it was necessary to make other alternative searches to identify these ALDH. In family 18, the domains PS00902 (Glutamate 5 kinase signature) and PS01223 (γ-glutamyl phosphate reductase signature) appear.
+
+All ALDH gene families identified in higher plants such as *Arabidopsis* are present in *C. arietinum*, with the exception of ALDH19 present only in *S. lycopersicum* (Table 3). The chickpea, with 29 CaALDH genes, is the third one along with tomato with the highest number of ALDH genes. Above tham is apple tree with 39 genes and cotton with 30 genes. *C. arietinum* seems to have additional ALDH proteins for stress response. Families 3 and 18 are particularly abundant, which may be significant for carrying out the detoxification of aldehyde molecules generated under different stresses and maintaining the homeostasis of reducing equivalents.
+
+*CaALDH* genes were mapped to the chickpea genome in order to understand the chromosomal distribution. Based on the available genome assembly of *C. arietinum*, 23 of the 29 genes are distributed in seven of the eight chromosomes. We find genes that encode ALDH from different families on the same chromosome. We could not map genes whose proteins have short sequence length (<272 aa). Chromosomes 6 and 7 contain 52% of the mapped genes. No *CaALDH* gene is mapped on chromosome 2 (Figure 3). The six *CaALDH* genes that can not be mapped in the reference genome (Table 2) could be mitochondrial genes; since the mitochondria is not found in the distribution of the reference genome in the NCBI.
+
+![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/Todos%20chr.jpg)
+**Figure 3**. Genomic distribution of *CaALDH* genes on the chickpea chromosomes. Chromosome number and sizes (Mb) are indicated above and below each bar, respectively. Only chromosomes with *CaALDH* genes are represented.
