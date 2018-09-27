@@ -83,4 +83,4 @@ To study the putative function of the CaALDH genes in chickpea, we analyzed thei
 The presence of RNAs from family 3 proteins in drought studies fits with the results obtained for *A. thaliana* (Missihoun et al., 2012). On the other hand, the absence of subfamily 3I1 in chickpea, which responds to several abiotic stresses, makes sense considering the global framework of aldehyde dehydrogenases identified in this work: family 18, which also responds to these stresses, ismore expanded than in any other plant specie described so far, and is greatly represented in these results.
 
 **Table 4**. in silico expression, libraries and loci where they appear.
-
+![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/Librer%C3%ADa%20EST-001.jpg)
