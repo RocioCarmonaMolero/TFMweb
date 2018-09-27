@@ -6,7 +6,7 @@ In this work we will see the next points:
 * [Identification of the *C. arietinum* aldehyde dehydrogenase suprefamily](https://github.com/RocioCarmonaMolero/TFMweb#identification-of-the-cicer-arietinum-aldehyde-dehydrogenase-superfamily)
   * [Search for candidate proteins](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#search-for-candidate-proteins)
   * [Checking ALDH conserved domains](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#checking-aldh-conserved-domains)
-  * [BLASTP of 'aldhcicer' against *C. arietinum* genome](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#blastp-of-aldhcicer-against-carietinum-genome)
+  * [BLASTP of 'aldhcicer' against chickpea genome](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#blastp-of-aldhcicer-against-carietinum-genome)
 * [Characterization of aldehyde dehydrogenases of *C. arietinum*](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#characterization-of-aldehyde-dehydrogenases-of-c-arietinum)
 * [Classification of *C. arietinum* aldehyde dehydrogenases](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#classification-of-c-arietinum-aldehyde-dehydrogenases)
 * [Phylogeny](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#phylogeny)
@@ -19,19 +19,19 @@ In this work we will see the next points:
 
 ### 1.1. Search for candidate proteins
 
-First, a keyword-based search was carried out in the 'Protein' database of the National Biotechnology Information Center ([NCBI](https://www.ncbi.nlm.nih.gov/)) specifying *Arabidopsis* as organism and 'Aldehyde dehydrogenase' as title. 136 proteins were obtained and their sequences were downloaded into a text file. A BLASTP (Altschul et al. 1990) was run against *Cicer arietinum* proteome in the Reference Protein database (refseq_protein). The thresholds established to select candidate *C. arietinum* ALDH (CaALDH) were: Query cover ≥ 25%, E-value ≥ e-25, Identity ≥ 25%. The chickpea sequences that fulfilled these parameters were downloaded into a csv file.
+First, a keyword-based search was carried out in the 'Protein' database of the National Biotechnology Information Center ([NCBI](https://www.ncbi.nlm.nih.gov/)) specifying *Arabidopsis* as organism and 'Aldehyde dehydrogenase' as title. 136 proteins were obtained and their sequences were downloaded into a text file. A BLASTP (Altschul et al. 1990) was run against *Cicer arietinum* proteome in the Reference Protein database (refseq_protein). The thresholds established to select candidate *C. arietinum* ALDH were: Query cover ≥ 25%, E-value ≥ e-25, Identity ≥ 25%. The chickpea sequences that fulfilled these parameters were downloaded into a csv file.
 
 As each BLASTP was done indepedently, the existence of the same XP was likely in different csv files. In order to clean those files and avoid the accession repetition enclosing the unique XPs on a vector called 'candidates', the R written function [get_IDprot()](https://github.com/RocioCarmonaMolero/ScriptProteinas/blob/master/get_IDprot.R) followed by the next commands was executed:
 
 > dat <-  read.csv(1_2cicer_D9V2GJ7401R-Alignment-HitTable.csv , header = FALSE, stringsAsFactors = F) 
  
-> dat <- dat[,2]    #the second column of the csv, downloaded directly from the BLASTP result, is taken
+> dat <- dat[,2]     #the second column of the csv, downloaded directly from the BLASTP result, is taken
  
-> IDprot <- get_IDprot(dat, 2)    #the function is applied and the result vector is saved in the 'IDprot' vector
+> IDprot <- get_IDprot(dat, 2)     #the function is applied and the result vector is saved in the 'IDprot' vector
  
-> candidates <- c(candidates, IDprot[!IDprot %in% candidates])    #the accessions of 'IDprot' not found in 'candidates' are included in it
-#this step was carried out with every 136 csv.
+> candidates <- c(candidates, IDprot[!IDprot %in% candidates])     #the accessions of 'IDprot' not found in 'candidates' are included in it
 
+This step was carried out with every 136 csv.
 
 The same process was repeated twice, being *Medicago truncatula* and *Glycine max* (soybean) the query. There were 36 aldehyde dehydrogenases found in [Phytozome v12.1](https://phytozome.jgi.doe.gov/pz/portal.html) and 21 in Refseq_Protein for *Medicago* and 55 found for soybean in the NCBI.
 The final 'candidates' vector contains 43 proteins.
@@ -41,35 +41,35 @@ Considering that the search was carried out against the model plant *Arabidopsis
 
 ### 1.2. Check ALDH conserved domains
 
-To verify which of our candidate proteins are aldolases, the presence of the ALDH-superfamily conserved domains was checked: 'PF00171.21', 'PF07368.10' and 'PF05893.13' in Pfam; 'PS00687' and 'PS00070' in ScanProsite; the accession 'cl11961' in the database of Conserved Domains of the NCBI; and the accession '53720' in the Superfamily database.
+To verify whether our candidate proteins are ALDH, the presence of the ALDH-superfamily conserved domains was manually checked: 'PF00171.21', 'PF07368.10' and 'PF05893.13' in Pfam; 'PS00687' and 'PS00070' in ScanProsite; the accession 'cl11961' in the database of Conserved Domains of the NCBI; and the accession '53720' in the Superfamily database.
 After this screen 36 proteins are selected, which will constitute a new vector called 'aldhcicer'.
 
-### 1.3. BLASTP 'aldhcicer' against *Ca* genome 
+### 1.3. BLASTP 'aldhcicer' against chickpea genome 
 
-Once the aldehyde dehydrogenases of chickpea are identified, a BLASTP is performed against its own genome. In this way, it will be possible to include any protein that does not have high homology with the other species, since in this case the query proteins are from the same organism.
-One more protein was identified with the Pfam domain 'PF00171.21'. Thus, we conclude that the chickpea ALDH superfamily has 37 members.
+Once the aldehyde dehydrogenases of chickpea are identified, a BLASTP is performed against its own genome. In this way, it will be possible to include any protein that does not have high homology with the other species and detect the unpredicted ones, since the query sequences are from the same organism.
+One more protein was identified with the Pfam domain 'PF00171.21'. Thus, we conclude that the chickpea ALDH superfamily (CaALDHs) has 37 members.
 
 
 ## 2. Characterization of CaALDH
  
-For the characterization of the aldolases, attention was focused on obtaining the following properties:
-* Number of amino acids (naa)
-* Accession of your mRNA (accRNA)
-* Length in bp of its RNA (RNAlen)
-* Name of the gene locus (LOC)
-* Chromosome in which it is (chr)
-* Number of exons (exon)
-* Position of the start of the protein (startp)
-* Position of the end of the protein (stop)
-* Molecular weight of the protein (mol_wg)
+For the characterization of CaALDH, attention was focused on obtaining the following properties:
+* Amino acids number (naa)
+* mRNA accession (accRNA)
+* RNA length in bp (RNAlen)
+* Gene locus identifier (LOC)
+* Chromosome location (chr)
+* Exon number (exon)
+* Start position of the protein (startp)
+* Stop position (stop)
+* Molecular weight (mol_wg)
 
 In order to collect this information, the function [caracterization()](https://github.com/RocioCarmonaMolero/ScriptProteinas/blob/master/InformationProteins.R) is applied; naming the function [weight_prot()](https://github.com/RocioCarmonaMolero/ScriptProteinas/blob/master/get_mol_weight.R).
 
-Open access bioinformatic tools were also used to predict the subcellular location and the active center. This knowledges will also be helpful in the next step: the classification of proteins.
-For cell localization, [DeepLoc 1.0](http://www.cbs.dtu.dk/services/DeepLoc/), which differentiates between 10 eukaryotic protein locations: Cytoplasm, Extracellular, Mitochondria, Cell Membrane, Chloroplast, Golgi apparatus, Lysosome/Vacuole, Nucleus, Endoplasmic reticulum and Peroxisome; [SLP-Local](http://sunflower.kuicr.kyoto-u.ac.jp/~smatsuda/slplocal.html) and [TargetP 1.1](http://www.cbs.dtu.dk/services/TargetP/) were used. Moreover, DeepLoc 1.0 indicates whether it is a soluble or a membrane protein. In the membrane protein results, the transmembrane domain was verified by [Smart](http://smart.embl-heidelberg.de/)(Simple Modular Architecture Research Tool). In order to consolidate the chloroplast and mitochondria location results, the presence of chloroplast transit peptides (cTP) was confirmed by [ChloroP 1.1](http://www.cbs.dtu.dk/services/ChloroP/) and mitochondrial-targeting sequences (mTP) by [Mitoprot](https://ihg.gsf.de/ihg/mitoprot.html). 
-For the active center, the protein sequences were analyzed with [PROSITE](https://prosite.expasy.org/), looking up the identification of the active center PS00687 (glutamic acid active site, E) and PS00070 (cysteine active site, C). In case another active site was found, it was also annotated.
+Open access bioinformatic tools were also used to predict the subcellular location and the active center. This knowledges will also be helpful for the classification of proteins.
+For cell localization, [DeepLoc 1.0](http://www.cbs.dtu.dk/services/DeepLoc/), which differentiates between 10 eukaryotic protein locations: cytoplasm, extracellular, mitochondria, cell membrane, chloroplast, golgi apparatus, lysosome/vacuole, nucleus, endoplasmic reticulum and peroxisome; [SLP-Local](http://sunflower.kuicr.kyoto-u.ac.jp/~smatsuda/slplocal.html) and [TargetP 1.1](http://www.cbs.dtu.dk/services/TargetP/) were used. Moreover, DeepLoc indicates whether it is a soluble or membrane protein. In the membrane protein results, the transmembrane domain was verified by [Smart](http://smart.embl-heidelberg.de/)(Simple Modular Architecture Research Tool). In order to consolidate the chloroplast and mitochondria location results, the presence of chloroplast transit peptides (cTP) was confirmed by [ChloroP 1.1](http://www.cbs.dtu.dk/services/ChloroP/) and mitochondrial-targeting sequences (mTP) by [Mitoprot](https://ihg.gsf.de/ihg/mitoprot.html). 
+For the active center, the protein sequences were analyzed with [PROSITE](https://prosite.expasy.org/), looking up the identification of the active center PS00687 (glutamic acid active site, E) and PS00070 (cysteine active site, C). In case any other active site was found, it was also noted down.
 
-[PROPSEARCH](http://abcis.cbs.cnrs.fr/propsearch/) was used to determine the molecular function. Each protein was analyzed individually and the hits with highest probability were written down. For the verification of these, it was checked whether the functional residues were conserved between query and hit. First through a database Blast search and after through an alignment between them with [Clustal Omega](http://www.clustal.org/omega/) program.
+[PROPSEARCH](http://abcis.cbs.cnrs.fr/propsearch/) was used to determine the molecular function. Each protein was individually analyzed and the hits with the highest probability were written down. For the verification of these, it was checked whether the functional residues were conserved between query and hit. First through a database BLAST search and after through an alignment between them with the [Clustal Omega](http://www.clustal.org/omega/) program.
 
 ![Scheme of the bioinformatic tools used for the characterization step](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/function%20scheme.jpg)
 **Figure 1**.Scheme of the bioinformatic tools used for the characterization and its aim
