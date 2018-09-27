@@ -13,7 +13,7 @@ As each BLASTP was done indepedently, the existence of the same XP was likely in
 > dat <-  read.csv(1_2cicer_D9V2GJ7401R-Alignment-HitTable.csv , header = FALSE, stringsAsFactors = F) 
  
 > dat <- dat[,2]     
-#the second column of the csv, downloaded directly from the BLASTP result, is taken
+#the second column of the csv, downloaded directly from the BLASTP results, is taken
  
 > IDprot <- get_IDprot(dat, 2)     
 #the function is applied and the result is saved in the 'IDprot' vector
@@ -68,23 +68,23 @@ For the active center, the protein sequences were analyzed with [PROSITE](https:
 
 ## 3. Classification of CaALDHs
 
-For the classification, the criteria stablished by the ALDH Gene Nomenclature Committee (AGNC) in 1999 was applied. Two proteins belong to the same gene family if they have more than 40% identity; to the same subfamily if they have more than 60% identity. In the annotation, the root 'ALDH' is followed by a family descriptor number, a capital letter to describe the subfamily, a number specifying the individual gene within the subfamily and a lowercase letter if necessary to designate variants (Zhu et al., 2014).
-Frequent methods for classifying this family in plants are based on homology with other plant species that are already described. For this, BLASTP of all 37 chickpea aldolases was made against the Protein Refseq database of *Medicago truncatula* and *Glycine max*, both being legumes and *Medicago* the model plant of them. All the results were downloaded and filtered to eliminate those whose identity was <40% and whose query length was less than the hit length: [Blast_Sieve.R](https://raw.githubusercontent.com/RocioCarmonaMolero/ScriptProteinas/master/Blast_Sieve.R)
+The criteria stablished by the ALDH Gene Nomenclature Committee (AGNC) for the classification was applied (AGNC; http://www.genenames.org/guidelines.html ; Vasiliou et al., 1999). Two proteins belong to the same gene family if they have > 40% identity; to the same subfamily if they have > 60% identity. The root 'ALDH' is followed by a family descriptor number, a capital letter to describe the subfamily, a number specifying the individual gene within the subfamily and a lowercase letter if necessary to designate variants.
+Frequent methods for classifying this family in plants are based on homology with other plant species already described. For this, BLASTP of all 37 CaALDH was made against the Protein refseq database of *Medicago truncatula* and *Glycine max*, both being legumes and *Medicago* the model plant. All the results were downloaded and filtered to eliminate those whose identity was < 40% and whose query length was less than the hit length through the R script [Blast_Sieve.R](https://raw.githubusercontent.com/RocioCarmonaMolero/ScriptProteinas/master/Blast_Sieve.R)
 
 
 ## 4. Phylogeny
 
-A multiple alignment of the sequences of the aldehyde dehydrogenases of *Medicago truncatula* (MtALDH) and *Cicer arietinum* (CaALDH) was performed in the form of one gene per locus with the MUSCLE program using the default parameters (Edgar, 2004). To deduce the evolutionary history, the Neighbor-Joining method was used (Saitou & Nei, 1987). The consensus bootstrap tree was inferred from 1000 repetitions (Felsenstein, 1985). Evolutionary distances were calculated using the Poisson correction method (Zuckerkandl & Pauling, 1965), being in the units of the number of amino acid substitutions per site. Evolutionary analyzes were performed in MEGA6 (Tamura et al., 2013). We consider sister pairs those proteins grouped on the basis of high bootstrap values (> 65%) [(Die et al., 2018)](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4695-9).
+A multiple alignment of the sequences of the aldehyde dehydrogenases of *Medicago truncatula* (MtALDH) and *Cicer arietinum* (CaALDH) was performed in the form of one gene per locus with the MUSCLE program using the default parameters (Edgar, 2004). To deduce the evolutionary history, the Neighbor-Joining method was used (Saitou & Nei, 1987). The consensus bootstrap tree was inferred from 1000 repetitions (Felsenstein, 1985). Evolutionary distances were calculated using the Poisson correction method (Zuckerkandl & Pauling, 1965), being in the units of the number of amino acid substitutions per site. Evolutionary analyzes were performed in MEGA6 (Tamura et al., 2013). We consider sister pairs those proteins grouped on the basis of bootstrap values > 65% [(Die et al., 2018)](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4695-9).
 
 
 ## 5. Duplication Analysis
 
-For the duplication analysis of the CaALDH, the Circoletto program (Darzentas, 2010) was used. Both the FASTA query and the FASTA database are the protein sequences of CaALDH; with ultra-strict E-value values (10 -180), using absolute score / colored bands and colors: green for identities ≤ 95%, orange ≤ 99% and red> 99%.
+For the duplication analysis of the CaALDH, the Circoletto program (Darzentas, 2010) was used. Both the FASTA query and the FASTA database are the CaALDH protein sequences; with ultra-strict E-value values (10 -180), using absolute score / colored bands and colors: green for identities ≤ 95%, orange ≤ 99% and red > 99%.
 
 
 ## 6. Expression in silico
 
-The coding sequences of the CaALDH genes were used as a query against the chickpea NCBI EST database. The search parameters were established as follows: megablast, identity> 90%, length> 180 bp and E-value <10-10 [(Die et al., 2018)](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4695-9).
+The coding sequences of the CaALDH genes were used as a query against the chickpea NCBI EST database. The search parameters were established as follows: megablast, identity > 90%, length > 180 bp and E-value < 10-10 [(Die et al., 2018)](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4695-9).
 
 
 ## 7. Code availability
