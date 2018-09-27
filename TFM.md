@@ -2,22 +2,13 @@ In this work we will see the following points:
 * [Identification of the *C. arietinum* aldehyde dehydrogenase suprefamily](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TFM.md#identification-of-the-cicer-arietinum-aldehyde-dehydrogenase-superfamily)
   * [Search for candidate proteins](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TFM.md#search-for-candidate-proteins)
   * [Checking ALDH conserved domains](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TFM.md#checking-aldh-conserved-domains)
-  * [BLASTP of 'aldhcicer' against chickpea genome]
-
-
-
-* (https://github.com/RocioCarmonaMolero/TFMweb#identification-of-the-cicer-arietinum-aldehyde-dehydrogenase-superfamily)
-  * [Search for candidate proteins](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#search-for-candidate-proteins)
-  * [Checking ALDH conserved domains](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#checking-aldh-conserved-domains)
-  * [BLASTP of 'aldhcicer' against chickpea genome](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#blastp-of-aldhcicer-against-carietinum-genome)
-* [Characterization of aldehyde dehydrogenases of *C. arietinum*](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#characterization-of-aldehyde-dehydrogenases-of-c-arietinum)
-* [Classification of *C. arietinum* aldehyde dehydrogenases](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#classification-of-c-arietinum-aldehyde-dehydrogenases)
-* [Phylogeny](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#phylogeny)
-* [Duplication Analysis](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#duplication-Analisis)
-* [Expression in silico](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#expression-in-silico)
-* [Code availability](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/README.md#code-availability)
-
-
+  * [BLASTP of 'aldhcicer' against chickpea genome](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TFM.md#blastp-of-aldhcicer-against-chickpea-genome)
+* [Characterization of CaALDH](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TFM.md#characterization-of-caaldh)
+* [Classification of CaALDH](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TFM.md#classification-of-caaldh)
+* [Phylogeny](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TFM.md#phylogeny)
+* [Duplication analysis](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TFM.md#duplication-analysis)
+* [Expression in silico](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TFM.md#expression-in-silico)
+* [Code availability](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/TFM.md#code-availability)
 
 
 
@@ -58,7 +49,7 @@ Once the aldehyde dehydrogenases of chickpea are identified, a BLASTP is perform
 One more protein was identified with the Pfam domain 'PF00171.21'. Thus, we conclude that the chickpea ALDH superfamily has 37 members.
 
 
-### Characterization of aldehyde dehydrogenases of C. arietinum
+### Characterization of CaALDH
  
 For the characterization of the aldolases, attention was focused on obtaining the following properties:
 * Number of amino acids (naa)
@@ -80,7 +71,7 @@ For the active center, the protein sequences were analyzed with [PROSITE](https:
 [PROPSEARCH](http://abcis.cbs.cnrs.fr/propsearch/) was used to determine the molecular function. Each protein was analyzed individually and the hits with highest probability were written down. For the verification of these, it was checked whether the functional residues were conserved between query and hit. First through a database BLAST search and after through an alignment between them with [Clustal Omega](http://www.clustal.org/omega/) program.
 
 
-## Classification of *C. arietinum* aldehyde dehydrogenases
+## Classification of CaALDH
 
 For the classification, the criteria stablished by the ALDH Gene Nomenclature Committee (AGNC) in 1999 was applied. Two proteins belong to the same gene family if they have more than 40% identity; to the same subfamily if they have more than 60% identity. In the annotation, the root 'ALDH' is followed by a family descriptor number, a capital letter to describe the subfamily, a number specifying the individual gene within the subfamily and a lowercase letter if necessary to designate variants (Zhu et al., 2014).
 Frequent methods for classifying this family in plants are based on homology with other plant species that are already described. For this, BLASTP of all 37 chickpea aldolases was made against the Protein Refseq database of *Medicago truncatula* and *Glycine max*, both being legumes and *Medicago* the model plant of them. All the results were downloaded and filtered to eliminate those whose identity was <40% and whose query length was less than the hit length: [Blast_Sieve.R](https://raw.githubusercontent.com/RocioCarmonaMolero/ScriptProteinas/master/Blast_Sieve.R)
@@ -91,7 +82,7 @@ Frequent methods for classifying this family in plants are based on homology wit
 A multiple alignment of the sequences of the aldehyde dehydrogenases of *Medicago truncatula* (MtALDH) and *Cicer arietinum* (CaALDH) was performed in the form of one gene per locus with the MUSCLE program using the default parameters (Edgar, 2004). To deduce the evolutionary history, the Neighbor-Joining method was used (Saitou & Nei, 1987). The consensus bootstrap tree was inferred from 1000 repetitions (Felsenstein, 1985). Evolutionary distances were calculated using the Poisson correction method (Zuckerkandl & Pauling, 1965), being in the units of the number of amino acid substitutions per site. Evolutionary analyzes were performed in MEGA6 (Tamura et al., 2013). We consider sister pairs those proteins grouped on the basis of high bootstrap values (> 65%) [(Die et al., 2018)](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4695-9).
 
 
-## Duplication Analysis
+## Duplication analysis
 
 For the duplication analysis of the CaALDH, the Circoletto program (Darzentas, 2010) was used. Both the FASTA query and the FASTA database are the protein sequences of CaALDH; with ultra-strict E-value values (10 -180), using absolute score / colored bands and colors: green for identities ≤ 95%, orange ≤ 99% and red> 99%.
 
