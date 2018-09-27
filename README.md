@@ -82,7 +82,7 @@ A multiple alignment of the sequences of the aldehyde dehydrogenases of *Medicag
 For the duplication analysis of the CaALDH, the Circoletto program (Darzentas, 2010) was used. Both the FASTA query and the FASTA database are the CaALDH protein sequences; with ultra-strict E-value values (10 -180), using absolute score / colored bands and colors: green for identities ≤ 95%, orange ≤ 99% and red > 99%.
 
 
-## 6. Expression in silico
+## 6. In silico expression
 
 The coding sequences of the CaALDH genes were used as a query against the chickpea NCBI EST database. The search parameters were established as follows: megablast, identity > 90%, length > 180 bp and E-value < 10-10 [(Die et al., 2018)](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4695-9).
 
