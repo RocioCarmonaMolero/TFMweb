@@ -80,7 +80,7 @@ For the active center, the protein sequences were analyzed with [PROSITE](https:
 ## Classification of CaALDH
 
 The criteria stablished by the ALDH Gene Nomenclature Committee (AGNC) for the classification was applied (AGNC; http://www.genenames.org/guidelines.html ; Vasiliou et al., 1999). Two proteins belong to the same gene family if they have > 40% identity; to the same subfamily if they have > 60% identity. The root 'ALDH' is followed by a family descriptor number, a capital letter to describe the subfamily, a number specifying the individual gene within the subfamily and a lowercase letter if necessary to designate variants.
-Frequent methods for classifying this family in plants are based on homology with other plant species already described. For this, BLASTP of all 37 CaALDH was made against the Protein refseq database of *Medicago truncatula* and *Glycine max*, both being legumes and *Medicago* the model plant. All the results were downloaded and filtered to eliminate those whose identity was < 40% and whose query length was less than the hit length through the R script [Blast_Sieve.R](https://raw.githubusercontent.com/RocioCarmonaMolero/ScriptProteinas/master/Blast_Sieve.R)
+Frequent methods for classifying this family in plants are based on homology with other plant species already described. For this, BLASTP of all 37 CaALDH was made against the Protein refseq database of *Medicago truncatula* and *Glycine max*, both being legumes and *Medicago* the model plant. All the results were downloaded and filtered to eliminate those whose identity was < 40% and whose query length was less than the hit length through the R script [Blast_Sieve.R](https://github.com/RocioCarmonaMolero/ScriptProteinas/blob/master/Blast_Sieve.R)
 
 
 ## Phylogeny
