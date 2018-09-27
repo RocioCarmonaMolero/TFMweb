@@ -76,11 +76,11 @@ Short aa sequences are not analyzed with Circoletto, so this does not help to el
 **Figure 5**. Analysis of duplications between CaALDH with the Circoletto tool; 1 gene per locus. Colors: green identities ≤ 95%, orange ≤ 99% and red> 99%.
 
 
-## in silico expression
+## In silico expression
 
 To study the putative function of the CaALDH genes in chickpea, we analyzed their expression profiles using the EST data sets available in the NCBI. Taking into account the strict thresholds established, 19 of the 37 CaALDH proteins are present in a total of 14 EST libraries (Table 4). There are 16 sequences present in studies of drought resistance; 2 in leaf tissue and 15 in root tissue. One CaALDH appears in roots sensitive to salinity; one in roots exposed to cadmium, in the wall of the pad and in the infection of *Fusarium oxysporum*; another appears in the response induced by an insect in leaf tissue (Table 4).
  
 The presence of RNAs from family 3 proteins in drought studies fits with the results obtained for *A. thaliana* (Missihoun et al., 2012). On the other hand, the absence of subfamily 3I1 in chickpea, which responds to several abiotic stresses, makes sense considering the global framework of aldehyde dehydrogenases identified in this work: family 18, which also responds to these stresses, ismore expanded than in any other plant specie described so far, and is greatly represented in these results.
 
-**Table 4**. in silico expression, libraries and loci where they appear.
+**Table 4**. In silico expression, libraries and loci where they appear.
 ![](https://github.com/RocioCarmonaMolero/TFMweb/blob/master/Librer%C3%ADa%20EST-001.jpg)
