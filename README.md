@@ -12,11 +12,15 @@ As each BLASTP was done indepedently, the existence of the same XP was likely in
 
 > dat <-  read.csv(1_2cicer_D9V2GJ7401R-Alignment-HitTable.csv , header = FALSE, stringsAsFactors = F) 
  
-> dat <- dat[,2]     #the second column of the csv, downloaded directly from the BLASTP result, is taken
+> dat <- dat[,2]     
+#the second column of the csv, downloaded directly from the BLASTP result, is taken
  
-> IDprot <- get_IDprot(dat, 2)     #the function is applied and the result vector is saved in the 'IDprot' vector
+> IDprot <- get_IDprot(dat, 2)     
+#the function is applied and the result is saved in the 'IDprot' vector
  
-> candidates <- c(candidates, IDprot[!IDprot %in% candidates])     #the accessions of 'IDprot' not found in 'candidates' are included in it
+> candidates <- c(candidates, IDprot[!IDprot %in% candidates])     
+#the accessions of 'IDprot' not found in 'candidates' are included in it
+
 
 This step was carried out with every 136 csv.
 
