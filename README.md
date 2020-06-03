@@ -8,7 +8,7 @@
 
 First, a keyword-based search was carried out in the 'Protein' database of the National Biotechnology Information Center ([NCBI](https://www.ncbi.nlm.nih.gov/)) specifying *Arabidopsis* as organism and 'Aldehyde dehydrogenase' as title. 136 proteins were obtained and their sequences were downloaded into a text file. A BLASTP (Altschul et al. 1990) was run against *Cicer arietinum* proteome in the Reference Protein database (refseq_protein). The thresholds established to select candidate *C. arietinum* ALDH were: Query cover ≥ 25%, E-value ≥ e-25, Identity ≥ 25%. The chickpea sequences that fulfilled these parameters were downloaded into a csv file.
 
-As each BLASTP was done indepedently, the existence of the same XP was likely in different csv files. In order to clean those files and avoid the accession repetition enclosing the unique XPs on a vector called 'candidates', the R written function [get_IDprot()](https://github.com/RocioCarmonaMolero/ScriptProteinas/blob/master/get_IDprot.R) followed by the next commands was executed:
+As each BLASTP was done indepedently, the existence of the same XP was likely in different csv files. In order to clean those files and avoid the accession repetition enclosing the unique XPs on a vector called 'candidates', the R written function [get_IDprot()](https://github.com/RocioCarmonaMolero/ScriptProteinas/blob/master/Get_IDprot.R) followed by the next commands was executed:
 
 > dat <-  read.csv(1_2cicer_D9V2GJ7401R-Alignment-HitTable.csv , header = FALSE, stringsAsFactors = F) 
  
